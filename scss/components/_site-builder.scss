@@ -12,6 +12,7 @@
 .sitebuilder {
     position: relative;
     &.is-loading {
+        @include loading-spinner;
         .site-builder {
             opacity: 0.3;
         }

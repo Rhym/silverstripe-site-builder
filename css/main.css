@@ -98,6 +98,22 @@
  ===========================================*/
 
 /** =========================================
+ * Loader
+ ===========================================*/
+
+/** -----------------------------------------
+ * Variables
+ * ----------------------------------------*/
+
+/** -----------------------------------------
+ * Mixins
+ * ----------------------------------------*/
+
+/** -----------------------------------------
+ * Animation
+ * ----------------------------------------*/
+
+/** =========================================
  * Site Builder
  ===========================================*/
 
@@ -111,6 +127,23 @@
 
 .sitebuilder {
 	position: relative;
+}
+
+.sitebuilder.is-loading:after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: transparent none;
+	border: 4px solid #E0E0E0;
+	border-color: rgba(0, 0, 0, 0.12);
+	border-top-color: #1b354c !important;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	margin: -12.5px 0 0 -12.5px;
+	animation: infinite-spinning 0.8s linear infinite;
 }
 
 .sitebuilder.is-loading .site-builder {
@@ -427,4 +460,16 @@
 }
 
 /*# sourceMappingURL=main.css.map */
+
+@keyframes infinite-spinning {
+
+from {
+	transform: rotate(0deg);
+}
+
+to {
+	transform: rotate(360deg);
+}
+
+}
 

@@ -219,7 +219,7 @@
       debug('- - - - - - - - - - - - - - - - - - - - -', 'wrapper redraw');
       var $self = this;
       $self.loading(false);
-      $self.html($response);
+      $self.closest('fieldset').html($response);
     }
   });
 })(jQuery);
