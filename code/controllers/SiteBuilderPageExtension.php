@@ -7,7 +7,6 @@
  */
 class SiteBuilderPageExtension extends DataExtension
 {
-
     /**
      * @var array
      */
@@ -25,16 +24,10 @@ class SiteBuilderPageExtension extends DataExtension
      */
     public function updateCMSFields(FieldList $fields)
     {
-        /** =========================================
-         * @var FieldList $fields
-         * @var GridField $gridField
-        ===========================================*/
-
-        $fields->removeByName('Main');
-        $fields->removeByName('Banner');
-
         /**
          * Create a GridField so we can steal it's edit methods.
+         *
+         * @var GridField $gridField
          */
         $gridField = GridField::create(
             'PageBuilderContainers',
@@ -43,8 +36,8 @@ class SiteBuilderPageExtension extends DataExtension
             GridFieldConfig_RelationEditor::create(999)
         );
         $gridField->addExtraClass('hide');
-        $fields->addFieldToTab('Root.Main', $gridField);
-        $fields->addFieldToTab('Root.Main', SiteBuilder::create(
+        $fields->addFieldToTab('Root.PageBuilder', $gridField);
+        $fields->addFieldToTab('Root.PageBuilder', SiteBuilder::create(
             'SiteBuilder',
             'SiteBuilder',
             $this->owner->PageBuilderContainers(),

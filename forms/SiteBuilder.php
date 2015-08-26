@@ -128,7 +128,7 @@ class SiteBuilder extends FormField
             FormField::create_tag(
                 'div',
                 array(),
-                '<span class="site-builder__container__content__item__content__heading">' . $container->Title . '</span><div class="grouped-actions">' . $contentActions . '</div>'
+                '<span class="site-builder__container__header__heading">' . $container->Title . '</span><div class="grouped-actions">' . $contentActions . '</div>'
             )
         );
 
@@ -210,7 +210,6 @@ class SiteBuilder extends FormField
             'a',
             array(
                 'id' => $this->ID,
-                'data-icon' => 'add',
                 'class' => 'ss-ui-action-constructive ss-ui-button js-action site-builder__actions__item site-builder__action site-builder__actions__item--new-container',
                 'href' => $this->Link() . '/siteBuilderAddContainer?ParentID=' . $this->PageID
             ),

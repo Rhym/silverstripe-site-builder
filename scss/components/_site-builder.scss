@@ -30,19 +30,24 @@
     &__container {
         box-sizing: border-box;
         display: block;
-        margin: $gap-xs;
+        margin: $gap-xs $gap-xs $gap-sm $gap-xs;
         cursor: all-scroll;
-
         &__header {
-            @extend %gridfield-accordion-style;
             @include clearfix;
+            background: $gray-lighter;
             position: relative;
             border-top-left-radius: $border-radius-base;
             border-top-right-radius: $border-radius-base;
-            border: 1px solid;
+            border: 1px solid $gray;
             border-bottom-width: 0;
             display: block;
             padding: $gap-sm;
+            &__heading {
+                display: inline-block;
+                font-weight: bold;
+                padding: .4em 0;
+                line-height: 1.4;
+            }
             &__actions {
                 float: right;
                 font-size: 0;
@@ -70,8 +75,9 @@
             border-bottom-left-radius: $border-radius-base;
             border-bottom-right-radius: $border-radius-base;
             border: 1px solid;
+            border-top-width: 0;
             display: block;
-            padding: $gap-md;
+            padding: 0 $gap-sm $gap-sm $gap-sm;
             &__placeholder {
                 @include make-xs-column(6, $gap-sm);
                 @extend %placeholder;

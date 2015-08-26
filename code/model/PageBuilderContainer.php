@@ -171,7 +171,7 @@ class PageBuilderContainer extends DataObject
     /**
      * @return mixed
      */
-    protected function getInlineStyle()
+    public function getInlineStyle()
     {
         $additionalStyles = (string)$this->getAdditionalStyles();
         return $this->dbObject('Style')->InlineStyle($additionalStyles);

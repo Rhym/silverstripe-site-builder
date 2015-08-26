@@ -3,7 +3,3 @@ LeftAndMain:
     - silverstripe-site-builder/css/main.css
   extra_requirements_javascript:
     - silverstripe-site-builder/javascript/main.js
-
-Page:
-  extensions:
-    - SiteBuilderPageExtension
