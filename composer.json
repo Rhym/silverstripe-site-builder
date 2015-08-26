@@ -18,7 +18,8 @@
     "composer/installers": "*",
     "ryanpotter/silverstripe-design-field": "~0.1",
     "ryanpotter/silverstripe-color-field": "~0.1",
-    "ryanpotter/silverstripe-cms-theme": "~0.3"
+    "ryanpotter/silverstripe-cms-theme": "~0.3",
+    "silverstripe-australia/gridfieldextensions": "~1.1"
   },
   "support": {
     "issues": "https://github.com/Rhym/silverstripe-site-builder/issues"
