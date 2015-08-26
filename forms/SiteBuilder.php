@@ -210,7 +210,8 @@ class SiteBuilder extends FormField
             'a',
             array(
                 'id' => $this->ID,
-                'class' => 'ss-ui-button js-action site-builder__actions__item site-builder__action site-builder__actions__item--new-container',
+                'data-icon' => 'add',
+                'class' => 'ss-ui-action-constructive ss-ui-button js-action site-builder__actions__item site-builder__action site-builder__actions__item--new-container',
                 'href' => $this->Link() . '/siteBuilderAddContainer?ParentID=' . $this->PageID
             ),
             _t('SiteBuilder.ADDCONTAINER',
