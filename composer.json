@@ -16,9 +16,9 @@
   "require": {
     "silverstripe/framework": ">=3.0.1,<3.2",
     "composer/installers": "*",
-    "ryanpotter/silverstripe-design-field": "~0.1.0",
-    "ryanpotter/silverstripe-color-field": "~0.1.0",
-    "ryanpotter/silverstripe-cms-theme": "~0.3.0",
+    "ryanpotter/silverstripe-design-field": "~0.1",
+    "ryanpotter/silverstripe-color-field": "~0.1",
+    "ryanpotter/silverstripe-cms-theme": "dev-master",
     "silverstripe-australia/gridfieldextensions": "~1.1"
   },
   "support": {
